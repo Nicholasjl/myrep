@@ -10,19 +10,18 @@ import static java.util.Arrays.sort;
 
 public class BowlingGame {
 
-    public int getBowlingScore(String bowlingCode) {
+
+    public static int getBowlingScore(String bowlingCode) {
 
             int[] a=new int [50];
 
-            Scanner in =new Scanner(System.in);
+
             int ma=0;
-            String cc;
-            while (in.hasNext()){
-                cc=in.next();
-                char[] c =cc.toCharArray();
+
+                char[] c =bowlingCode.toCharArray();
                 int n=1;
                 a[0]=-1;
-                for (int i=0;i<cc.length();i++){
+                for (int i=0;i<bowlingCode.length();i++){
                     if (c[i]=='X'||c[i]=='/')
                         a[n]=10;
                     else if (c[i]=='|')
@@ -63,10 +62,18 @@ public class BowlingGame {
                 }
                 ma=max(ma,sum);
                 System.out.println(sum);
-            }
-            System.out.println(ma);
+
+            //X|7/|9-|X|-8|8/|-6|X|X|X||81System.out.println(ma);
         return 0;
 
+    }
+    public static void main(String [] args){
+        Scanner in =new Scanner(System.in);
+        String cc;
+        while (in.hasNext()) {
+            cc = in.next();
+            getBowlingScore(cc);
+        }
     }
 }
 
