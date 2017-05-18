@@ -18,7 +18,7 @@ class MyComparator implements Comparator <Integer>{
     }
 }
 
-public class BowlingGame {
+public class getBowlingScore {
     public static void main(String[] args) {
 
         int[] a=new int [50];
