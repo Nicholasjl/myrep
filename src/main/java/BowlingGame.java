@@ -67,14 +67,7 @@ public class BowlingGame {
         return 0;
 
     }
-    public static void main(String [] args){
-        Scanner in =new Scanner(System.in);
-        String cc;
-        while (in.hasNext()) {
-            cc = in.next();
-            getBowlingScore(cc);
-        }
-    }
+
 }
 
 
