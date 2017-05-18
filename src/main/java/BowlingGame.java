@@ -7,23 +7,14 @@ import java.util.Comparator;
 import static java.lang.Math.abs;
 import static java.lang.Math.max;
 import static java.util.Arrays.sort;
-class MyComparator implements Comparator <Integer>{
-    @Override
-    public int compare(Integer o1, Integer o2){
-        if(abs(o1)<abs(o2))
-            return 1;
-        if(abs(o1)>abs(o2))
-            return -1;
-        return 0;
-    }
-}
 
-public class getBowlingScore {
-    public static void main(String[] args) {
+public class BowlingGame {
 
-        int[] a=new int [50];
+    public int getBowlingScore(String bowlingCode) {
 
-        Scanner in =new Scanner(System.in);
+            int[] a=new int [50];
+
+            Scanner in =new Scanner(System.in);
             int ma=0;
             String cc;
             while (in.hasNext()){
@@ -74,13 +65,11 @@ public class getBowlingScore {
                 System.out.println(sum);
             }
             System.out.println(ma);
-
-
+        return 0;
 
     }
-
-
 }
+
 
 
 
