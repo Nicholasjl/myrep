@@ -1,13 +1,3 @@
-package com.company;
-import java.math.BigInteger;
-import java.util.*;
-import java.util.Arrays;
-import java.text.DecimalFormat;
-import java.util.Comparator;
-import static java.lang.Math.abs;
-import static java.lang.Math.max;
-import static java.util.Arrays.sort;
-
 public class BowlingGame {
 
 
@@ -61,10 +51,10 @@ public class BowlingGame {
                         sum+=a[i];
                 }
                 ma=max(ma,sum);
-                System.out.println(sum);
+          
 
             //X|7/|9-|X|-8|8/|-6|X|X|X||81System.out.println(ma);
-        return 0;
+        return ma;
 
     }
 
